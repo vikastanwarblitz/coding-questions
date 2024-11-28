@@ -17,7 +17,9 @@ Given a linked list head, return an array of length 2 containing [minDistance, m
 Example 1:
 
 Input: head = [3,1]
+
 Output: [-1,-1]
+
 Explanation: There are no critical points in [3,1].
 
 Example 2:
