@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-class Driver {
+class Main {
     public static void main(String args[]){
         Scanner scanner = new Scanner(System.in);
         String myString = scanner.nextLine();  // Read the entire line of input
