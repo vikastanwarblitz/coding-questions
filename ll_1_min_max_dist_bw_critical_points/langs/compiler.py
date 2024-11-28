@@ -3,16 +3,6 @@ class Node:
         self.val = val
         self.next = next
 
-class Solution:
-    def solve(self, head):
-        # Example solve method logic: collect values into a list
-        result = []
-        current = head
-        while current is not None:
-            result.append(current.val)
-            current = current.next
-        return result
-
 def create_linked_list(values):
     if len(values) == 0:
         return None
