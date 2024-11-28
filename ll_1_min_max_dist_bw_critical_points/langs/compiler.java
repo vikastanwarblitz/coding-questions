@@ -1,7 +1,4 @@
-import java.util.Scanner;
-import java.util.Arrays;
-
-class Main {
+class Driver {
     public static void main(String args[]){
         Scanner scanner = new Scanner(System.in);
         String myString = scanner.nextLine();  // Read the entire line of input
@@ -11,9 +8,20 @@ class Main {
         Node head = createLinkedList(values);  // Create linked list from values
 
         // Printing the linked list to verify
-        int[] output = Solution.solve(head);
+        Solution sol = new Solution();
+        int[] output = sol.solve(head);
 
-        System.out.println(Arrays.toString(output));
+        // Convert to String manually
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < output.length; i++) {
+            sb.append(output[i]);  // Append each element
+            if (i < output.length - 1) {
+                sb.append(" ");   // Add comma and space between elements
+            }
+        }
+
+        System.out.println(sb.toString());
 
     }
 
